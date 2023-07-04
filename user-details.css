@@ -1,0 +1,64 @@
+body{
+    margin: 10px 20px;
+}
+.top-box{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    row-gap: 15px;
+    font-size: 20px;
+}
+.bottom-box{
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    row-gap: 15px;
+    font-size: 20px;
+}
+
+#map {
+    margin: 10px 0;
+    padding: 20px;
+  }
+  #post-offices {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+    padding: 10px;
+    justify-items: center;
+    align-content: space-evenly;
+  }
+  .inner {
+    width: 80%;
+    border: 2px solid black;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+  }
+
+  .input-container{
+    position: relative;
+    margin-top: 20px;
+    padding: 10px 0px;
+  }
+  
+  .input-container label{
+    font-size: 23px;
+  }
+  .input-container input{
+    margin-left: 0px;
+    height: 30px;
+    width:85%;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+  
+  .input-container svg {
+    position: absolute;
+    top: 50%;
+    left: 65px;
+    transform: translateY(-50%);
+    pointer-events:none;
+  }
+
+  .input-container.focus svg {
+    display: none;
+  }
