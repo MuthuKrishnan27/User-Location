@@ -25,5 +25,5 @@ let ipAddress;
 
       document.getElementById("btn-getdata").addEventListener("click", () => {
         localStorage.setItem("ip", JSON.stringify(ipAddress));
-        window.location.pathname = "../User-Location/user-details.html"
+        window.location.href = "./user-details.html"
       });
