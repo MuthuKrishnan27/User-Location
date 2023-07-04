@@ -38,7 +38,7 @@
   function bottomlocationData(data,timezone){
     let bottombox = document.getElementsByClassName('bottom-box')[0].children;
     console.log(bottombox)
-    bottombox[0].innerHTML=`<b>Time Zone :</b>${data.timezone}`
+    bottombox[0].innerHTML=`<b>Time Zone : </b>${data.timezone}`
     let Date = getCurrentTime(timezone);
     bottombox[1].innerHTML=`<b>Date and Time : </b>${Date}`;
     bottombox[2].innerHTML=`<b>Pincode : </b>${data.postal}`;
