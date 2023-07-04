@@ -25,7 +25,7 @@
     topbox[2].innerHTML = `<b>Organisation : </b>${data.org}`;
     topbox[3].innerHTML = `<b>Long : </b>${lon}`;
     topbox[4].innerHTML = `<b>Region : </b>${data.region}`;
-    topbox[5].innerHTML = `<b>Hostname : </b>${window.location.hostname}`
+    topbox[5].innerHTML = `<b>Hostname : </b>${document.domain}`
 }
 
   // Function to display the user's location on Google Maps
