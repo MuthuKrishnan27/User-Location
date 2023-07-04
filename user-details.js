@@ -25,6 +25,7 @@
     topbox[2].innerHTML = `<b>Organisation : </b>${data.org}`;
     topbox[3].innerHTML = `<b>Long : </b>${lon}`;
     topbox[4].innerHTML = `<b>Region : </b>${data.region}`;
+    topbox[5].innerHTML = `<b>Hostname : </b>${window.location.hostname}`
 }
 
   // Function to display the user's location on Google Maps
@@ -119,10 +120,10 @@
                 <div><b>District: </b>${postOffice.District}</div>
                 <div><b>Division: </b>${postOffice.Division}</div>`;
 
-          postOfficesList.appendChild(inner);
+          postOfficesList.appendChild(inner); 
         });
 
-        bottombox[3].innerHTML=`<b>Message :</b>Number of pincode's found ${countMessage.length}`;
+        bottombox[3].innerHTML=`<b>Message : </b>Number of pincode's found : ${countMessage.length}`;
 
         // Filter box functionality
         document
